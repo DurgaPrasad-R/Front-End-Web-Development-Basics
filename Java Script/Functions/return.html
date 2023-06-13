@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>
+		return in function
+	</title>
+	<script type="text/javascript">
+		function concatenate(first,last)
+		{
+			var full;
+			full=first+last;
+			return full;
+		}
+		function secondFunction()
+		{
+			var result;
+			result= concatenate('vit', 'vishnu');
+			document.write(result);
+		}
+		</script>
+	</head>
+	<body>
+		<p>click the below button</p>
+		<input type="button"onclick="secondFunction()" value="Call Function">
+	</body>
+</html>
