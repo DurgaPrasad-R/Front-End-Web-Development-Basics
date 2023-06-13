@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>DOM in JS</title>
+
+</head>
+<body>
+	<h1>DOM</h1>
+	<script>
+		function printvalues()
+		{
+			var name=document.form1.Yourname.value;
+			alert("Welcome "+name)
+		}
+	</script>
+	<form name="form1">
+		Enter Num:<input type="text" name="Yourname">
+		<br>
+		<input type="button" value="Print" onclick="printvalues()">		
+	</form>
+</body>
+</html>
