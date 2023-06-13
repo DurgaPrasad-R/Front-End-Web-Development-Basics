@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Events in JS</title>
+</head>
+<body>
+	<center>
+		<p id="p1"> </p>
+		<form onreset="event1()">
+			<input type="text" name="NAME">
+			<input type="submit" value="SUBMIT">
+			<input type="reset" value="RESET">
+		</form>		
+		<script>
+			function event1()
+			{
+				document.getElementById("p1").innerHTML=" All values are cleared";
+			}
+		</script>
+		</center>
+</body>
+</html>
