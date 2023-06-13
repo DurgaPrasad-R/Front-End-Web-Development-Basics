@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Animations</title>
+	<style> 
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			animation-name: test;
+			animation-duration: 2s;
+			animation-iteration-count: 2;
+			animation-delay: 2s;
+			animation-timing-function: linear;
+/*			animation:test 3s linear 2;*/
+		}
+
+
+		.box2{
+			margin-top: 100px;
+			animation-timing-function: ease-in;
+/*			animation-timing-function: ease-out;*/
+		}
+			@keyframes test{
+				0%{
+					background-color: red;
+				}
+				100%{
+					transform: translateX(500px);
+					background-color: blue;
+					}
+			}
+
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+	</div>
+	<div class="box box2">
+		
+	</div>
+
+</body>
+</html>
